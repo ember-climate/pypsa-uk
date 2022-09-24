@@ -93,3 +93,7 @@ The most significant model references are listed below:
 - ENTSO-E European Resource Adequacy Assessment (ERAA) 2021: https://www.entsoe.eu/outlooks/eraa/2021/eraa-downloads/index.html
 - Climate Change Committee Sixth Carbon Budget (2020): https://www.theccc.org.uk/publication/sixth-carbon-budget/
 - PyPSA-PL: Czyżak, P., Mańko, M., Sikorski, M., Stępień, K., Wieczorek, B. (2021). PyPSA-PL - An open energy model of the Polish power sector based on the PyPSA framework. Instrat. https://github.com/instrat-pl/pypsa-pl
+
+## Release notes
+
+- 0.1.0 - initial release of PyPSA-UK model with a 2030 scenario described in [Ember's briefing on UK 2030 clean power](https://ember-climate.org/insights/research/uk-gas-power-phase-out/)
