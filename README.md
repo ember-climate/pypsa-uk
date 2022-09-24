@@ -2,7 +2,7 @@
 
 ## Introduction
 
-Welcome to the `PyPSA-UK` repository! `PyPSA-UK` is a dataset that can be used with the `PyPSA` open energy modelling framework to analyze the mechanics of the UK power system. The model was created by Ember and described in a [briefing on UK 2030 clean power](XXX).
+`PyPSA-UK` is a dataset that can be used with the `PyPSA` open energy modelling framework to analyze the mechanics of the UK power system. The model was created by Ember and described in a [briefing on UK 2030 clean power](https://ember-climate.org/insights/research/uk-gas-power-phase-out/).
 
 ## Citation and license
 
@@ -34,7 +34,7 @@ To make the model as accessible as possible `PyPSA-UK` is contained in just one 
 After you complete the installation procedue, it is quite easy to get first results:
 
 1. Open the `pypsa-uk-prototype.ipynb` file script in the `pypsa-uk` folder using your IDE.
-2. Set your solver name in line 98: `network.lopf(snapshots=network.snapshots, solver_name='highs', pyomo=False)`. 
+2. Set your solver name in cell 5: `network.lopf(snapshots=network.snapshots, solver_name='highs', pyomo=False)`. 
 3. Save the file and run it (if an error pops up, make sure the terminal points to the correct directory and Python can see your solver).
 4. Once the optimization is finished, you can view selected results in the bottom of the Jupyter notebook file.
 
@@ -42,7 +42,7 @@ The notebook shows only basic outputs like electricity generation, but you there
 
 ## Model design
 
-Please see [Ember's briefing on UK 2030 clean power]() for a full explanation of the assumptions behind the modelled scenarios. An excerpt is provided below:
+Please see [Ember's briefing on UK 2030 clean power](https://ember-climate.org/insights/research/uk-gas-power-phase-out/) for a full explanation of the assumptions behind the modelled scenarios. An excerpt is provided below.
 
 The scenario provided with the model uses 2030 capacity and demand expectations from National Grid’s Future Energy Scenarios (Leading the Way pathway), expanding the geographical scope to cover Northern Ireland. 
 
@@ -70,9 +70,9 @@ A few categories of tabs can be seen:
 
 ## Further improvements
 
-We are aware that many improvements can be made in the `PyPSA-UK` model, some of them include:
+Many improvements can be made in the `PyPSA-UK` model, some of them include:
 
-- Heating - including heat demand in the model and proposing a more detailed conversion scheme for existing CHP plants. This would also make the CHP generation profile more realistic as currently it is independent from climatic assumptions.
+- Heating - including heat demand in the model. This would make the CHP generation profile more realistic as currently it is independent from climatic assumptions.
 - Hydrogen - including electrolyzers in the model, which would make the total generation more comparable with National Grid's approach, and would make it easier to analyse the potential of using curtailed energy for electrolysis (it is currently done outside of the optimisation model)
 - EU-wide network - including a full representation of the European-wide transmission network and the cross-border flows by adding at least a single node per country, with capacity expansion projections based on e.g. the NECP's
 - Thermal unit flexibility - adding ramp-up/down and minimum utilization constraints for thermal units. This was removed from the model due to the significant increase in model solving times, but it is possible to implement these constraints in `PyPSA`.
