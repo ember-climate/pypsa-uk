@@ -78,6 +78,7 @@ Many improvements can be made in the `PyPSA-UK` model, some of them include:
 - Thermal unit flexibility - adding ramp-up/down and minimum utilization constraints for thermal units. This was removed from the model due to the significant increase in model solving times, but it is possible to implement these constraints in `PyPSA`.
 - Demand disaggregation - the UK-wide demand profiles are disaggregated into regions based on historical regional consumption data. It is possible the spatial distribution of the demand will change in the future, which should be represented in the model.
 - Unit maintenance schedule - the model does not include planned and unplanned outages of generation units, which could mean that the availability of especially older plants is higher than in reality. A maintenance schedule and a random outage algorithm could be included to represent the actual working conditions of generators.
+- DSR - demand side response is implemented as a generator which is a simplification, could potentially be implemented as a storage unit with variable availability
 
 You are welcome to expand and modify `PyPSA-UK` according to your needs (honoring the license - see `Citiation and license` section). You can also submit pull requests onto the `PyPSA-UK` repository, but due to a lack of resources we cannot ensure we will be able to review and approve those.
 
