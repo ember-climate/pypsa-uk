@@ -12,7 +12,7 @@ The recommended citation is:
 
 `PyPSA-UK` is based on the [PyPSA](https://pypsa.readthedocs.io/en/latest/index.html) open energy modelling framework used by many research institutions around the world. Whenever using `PyPSA-UK`, please also give credit to the authors of `PyPSA` following the guidelines [described in the PyPSA documentation](https://pypsa.readthedocs.io/en/latest/citing.html).
 
-[Similarly to PyPSA](https://pypsa.readthedocs.io/en/latest/introduction.html?highlight=license#licence), `PyPSA-PL` is distributed under the [MIT license](https://github.com/instrat-pl/pypsa-pl/blob/main/LICENSE).
+[Similarly to PyPSA](https://pypsa.readthedocs.io/en/latest/introduction.html?highlight=license#licence), `PyPSA-UK` is distributed under the [MIT license](https://github.com/ember-climate/pypsa-uk/blob/release/LICENSE).
 
 ## Setup
 
