@@ -1,4 +1,6 @@
-# PyPSA-UK
+# (DEPRECATED) PyPSA-UK
+
+We've merged our models into one framework: [Ember-PyPSA](https://github.com/ember-climate/ember-pypsa) so this repository will be deprecated. 
 
 ## Introduction
 
